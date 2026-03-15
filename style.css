@@ -166,14 +166,12 @@ img{
     clear: both;
 }  
 .projects-title {
-    position: relative; 
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    position: relative;       /* normal flow */
+    z-index: -1;               /* below menu */
+    text-align: center;       /* center text */
     font-size: 40px;
     font-weight: 700;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;   /* space above and below */
 }
 .projects-container {
     display: grid;
